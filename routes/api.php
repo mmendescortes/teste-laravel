@@ -14,4 +14,4 @@ use App\Http\Controllers\ElectroController;
 |
 */
 
-Route::resource('electro', ElectroController::class);
+Route::middleware(['cors'])->resource('electro', ElectroController::class);
